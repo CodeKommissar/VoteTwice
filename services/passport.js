@@ -18,7 +18,8 @@ passport.deserializeUser((id, done) => {
 passport.use(new RedditStrategy({
     clientID: keys.redditClientID,
     clientSecret: keys.redditClientSecret,
-    callbackURL: "/auth/reddit/callback"
+    callbackURL: "/auth/reddit/callback",
+    proxy: true
 }, (accessToken, refreshToken, profile, done) => {
     User.findOne({ redditId: profile.id }).then((existingUser) => {
         if (existingUser) {
