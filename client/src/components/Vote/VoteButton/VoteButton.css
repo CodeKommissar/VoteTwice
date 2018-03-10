@@ -1,0 +1,38 @@
+.VoteButton {
+    margin-top: 1rem;
+    text-align: center;
+    width: 250px;
+    background-color: green;
+    border: 4px solid lightblue;
+    padding: 3px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.VoteButton:hover {
+    background-color: darkgreen;
+    border: 4px solid lightgreen;
+}
+
+.VoteButton a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.vote-button-text {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.vote-button-wait {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: not-allowed;
+}

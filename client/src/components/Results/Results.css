@@ -1,0 +1,44 @@
+.Results {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    border-left: 4px solid pink;
+    border-right: 4px solid pink;
+    border-bottom: 4px solid pink;
+    box-sizing: border-box;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+}
+
+.member-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-name {
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    text-shadow: 1px 1px black;
+    margin-bottom: 3px;
+}
+
+.member-votes {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}

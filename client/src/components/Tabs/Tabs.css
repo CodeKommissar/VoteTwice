@@ -1,0 +1,64 @@
+.Tabs {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: -2rem auto 0 auto;
+}
+
+.link {
+  cursor: pointer;
+  background-color: #eee;
+  width: 100%;
+  text-align: center;
+}
+
+.vote {
+  border-radius: 1rem 0 0 0;
+  border-top: 4px solid pink;
+  border-left: 4px solid pink;
+}
+
+.vote-border {
+  border-bottom: 3px solid #fc5d9d;
+}
+
+.dashed-border {
+  height: 100%;
+  content: "";
+  border-left: 3px dashed red;
+}
+
+.results {
+  border-radius: 0 1rem 0 0;
+  border-top: 4px solid pink;
+  border-right: 4px solid pink;
+}
+
+.results-border {
+  border-bottom: 3px solid #fc5d9d;
+}
+
+.tab {
+  color: #FF5E9F;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin: 0.7rem 0 0.7rem 0;
+  display: inline-block;
+}
+
+/* Styles for when the selected link is active */
+
+.selected {
+  cursor: initial;
+  background-color: white;
+}
+
+.selected .vote-border, .selected .results-border {
+  border-bottom: none;
+}
+
+.selected p.tab {
+  text-decoration: underline;
+}
